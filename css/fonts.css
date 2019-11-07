@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Black.woff') format('woff');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-BlackItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Bold.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-BoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Light.woff') format('woff');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-LightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Medium.woff') format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-MediumItalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Regular.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-RegularItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Semibold.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-SemiboldItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/calibre-test/CalibreTest-Thin.woff') format('woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'calibre-test';
+    src: url('fonts/CalibreTest-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
