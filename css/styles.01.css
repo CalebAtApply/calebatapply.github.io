@@ -1,0 +1,43 @@
+.main-navigation.bg-dark {
+    background-color: #FB818A !important;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.main-navigation .navbar-brand {
+    padding-top: .8125rem;
+    padding-bottom: .8125rem;
+}
+
+.main-navigation .nav-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.main-navigation .nav-item.active {
+    border-bottom: 0.5rem solid white;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+}
+}
+
+
+.connection-hub .jumbotron {
+    background: url('/images/banners/connection-hub-banner.jpg') no-repeat center #e9ecef;
+    background-size: cover;
+}
+
+.connection-hub .jumbotron .container {
+    background-color: rgb(255,255,255, 0.85);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.connection-hub .card  {
+
+}
+
+.connection-hub .card .card-body {
+
+}
