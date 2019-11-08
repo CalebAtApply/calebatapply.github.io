@@ -1,3 +1,8 @@
+body {
+    font-family: 'calibre-test';
+    font-weight: 500;
+}
+
 .main-navigation.bg-dark {
     background-color: #FB818A !important;
     padding-top: 0;
@@ -20,8 +25,11 @@
     padding-top: 0.5rem;
     padding-bottom: 0;
 }
-}
 
+.main-navigation .nav-item .nav-link {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+}
 
 .connection-hub .jumbotron {
     background: url('/images/banners/connection-hub-banner.jpg') no-repeat center #e9ecef;
@@ -32,6 +40,35 @@
     background-color: rgb(255,255,255, 0.85);
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.page-intro{
+    padding: 35px 30px 20px 30px;
+
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.connection-hub-filters {
+    padding: 15px 30px;
+}
+
+.connection-hub-filters .show-apply-filters {
+    float: right;
+    color: #FB818A;
+    margin-top: -32px;
+}
+
+.connection-hub-filters .btn-primary {
+    color: #fff;
+    background-color: #FB818A;
+    border-color: #FB818A;
+    width: 40%;
+}
+
+.connection-hub-filters .btn-secondary {
+    color: #6c757d;
+    background-color: #FFFFFF;
+    width: 40%;
 }
 
 .connection-hub .card  {
