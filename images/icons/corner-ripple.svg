@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="67px" viewBox="0 0 52 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Corner ripple</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.8%" y="-16.3%" width="109.5%" height="132.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.752941176   0 0 0 0 0.776470588   0 0 0 0 0.8  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-2" x="0" y="0" width="45" height="53"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Volunteer-Profile-Creation" transform="translate(0.000000, -134.000000)">
+            <g id="Group-11" transform="translate(-44.000000, 74.000000)">
+                <g id="Group-14" transform="translate(0.000000, 28.000000)">
+                    <g id="topnav/small">
+                        <g id="•-iPhone-XS-/-Bars-/-Navigation-Large" filter="url(#filter-1)">
+                            <g id="breadcrumbs">
+                                <g id="Breadcrumbs">
+                                    <g id="Ripple" transform="translate(44.000000, 36.000000)">
+                                        <g id="Corner-ripple">
+                                            <mask id="mask-3" fill="white">
+                                                <use xlink:href="#path-2"></use>
+                                            </mask>
+                                            <g id="Mask"></g>
+                                            <circle id="Oval" fill="#FBEFD4" mask="url(#mask-3)" cx="0.5" cy="8.5" r="44.5"></circle>
+                                            <circle id="Oval" fill-opacity="0.5" fill="#FFD575" mask="url(#mask-3)" cx="1" cy="9" r="30"></circle>
+                                            <circle id="Oval" fill="#FFD575" mask="url(#mask-3)" cx="1.5" cy="9.5" r="14.5"></circle>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

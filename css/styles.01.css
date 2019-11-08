@@ -1,34 +1,53 @@
 body {
     font-family: 'calibre-test';
-    font-weight: 500;
+    font-weight: 300;
+}
+
+h1 {
+    font-weight: 600;
 }
 
 .main-navigation.bg-dark {
     background-color: #FB818A !important;
     padding-top: 0;
     padding-bottom: 0;
+    height: 64px;
 }
 
 .main-navigation .navbar-brand {
     padding-top: .8125rem;
     padding-bottom: .8125rem;
+    width: 50px;
+}
+
+.main-navigation .navbar-brand .rippple-logo {
+    display: block;
+    position: absolute;
+    width: 45px;
+    top: 6px;
+    left: 30px;
+}
+
+.main-navigation .navbar-brand .rippple-logo img {
+    width: 100%;
 }
 
 .main-navigation .nav-item {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
 }
 
 
 .main-navigation .nav-item.active {
-    border-bottom: 0.5rem solid white;
-    padding-top: 0.5rem;
+    border-bottom: 0.6rem solid white;
+    padding-top: 0.8rem;
     padding-bottom: 0;
+    font-weight: 500;
 }
 
 .main-navigation .nav-item .nav-link {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .connection-hub .jumbotron {
@@ -42,10 +61,14 @@ body {
     padding-bottom: 20px;
 }
 
-.page-intro{
+.page-intro {
+    background: url('/images/icons/corner-ripple.svg') no-repeat;
+    background-position: 0 -4px;
     padding: 35px 30px 20px 30px;
 
-    border-bottom: 1px solid #cdcdcd;
+    -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.06);
 }
 
 .connection-hub-filters {
@@ -58,17 +81,28 @@ body {
     margin-top: -32px;
 }
 
+.connection-hub-filters .btn-actions {
+    text-align: center;
+    padding-top: 10px;
+}
+
 .connection-hub-filters .btn-primary {
     color: #fff;
     background-color: #FB818A;
     border-color: #FB818A;
-    width: 40%;
+    width: 45%;
+}
+
+.connection-hub-filters .btn-primary:active {
+    background-color: rgb(252, 120, 129) !important;
+    border-color: rgb(252, 120, 129) !important;
 }
 
 .connection-hub-filters .btn-secondary {
     color: #6c757d;
     background-color: #FFFFFF;
-    width: 40%;
+    width: 45%;
+    margin-left: 24px;
 }
 
 .connection-hub .card  {
