@@ -1,10 +1,15 @@
 body {
     font-family: 'calibre-test';
     font-weight: 300;
+    background: #FFF;
 }
 
 h1 {
     font-weight: 600;
+}
+
+h2 {
+    font-size: 1.3rem;  
 }
 
 .main-navigation.bg-dark {
@@ -25,7 +30,14 @@ h1 {
     position: absolute;
     width: 45px;
     top: 6px;
-    left: 30px;
+    margin-left: 30px;
+    z-index: 10;
+}
+
+@media (max-width: 1010px) {
+    .main-navigation .navbar-brand .rippple-logo {
+        margin-left: 14px;
+    }    
 }
 
 .main-navigation .navbar-brand .rippple-logo img {
@@ -37,7 +49,6 @@ h1 {
     padding-bottom: 0.8rem;
 }
 
-
 .main-navigation .nav-item.active {
     border-bottom: 0.6rem solid white;
     padding-top: 0.8rem;
@@ -46,29 +57,24 @@ h1 {
 }
 
 .main-navigation .nav-item .nav-link {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-
-.connection-hub .jumbotron {
-    background: url('/images/banners/connection-hub-banner.jpg') no-repeat center #e9ecef;
-    background-size: cover;
-}
-
-.connection-hub .jumbotron .container {
-    background-color: rgb(255,255,255, 0.85);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
 }
 
 .page-intro {
-    background: url('/images/icons/corner-ripple.svg') no-repeat;
-    background-position: 0 -4px;
-    padding: 35px 30px 20px 30px;
-
     -webkit-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.19);
     -moz-box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.06);
     box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.06);
+}
+
+.page-intro .container {
+    background: url('/images/icons/corner-ripple.svg') no-repeat;
+    background-position: 0 -4px;
+    padding: 35px 40px 20px 40px;
+}
+
+.page-intro h1 {
+    margin-left: 20px;
 }
 
 .connection-hub-filters {
@@ -76,9 +82,13 @@ h1 {
 }
 
 .connection-hub-filters .show-apply-filters {
-    float: right;
+    display: inline-block;
     color: #FB818A;
-    margin-top: -32px;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    float: right;
+    margin-top: 6px;
 }
 
 .connection-hub-filters .btn-actions {
@@ -105,10 +115,319 @@ h1 {
     margin-left: 24px;
 }
 
-.connection-hub .card  {
+.connection-hub .profile-card  {
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 1px solid #FFCF62;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.connection-hub .profile-card.last {
+    border: 0;
+}
+
+.connection-hub .profile-card .profile-side {
+    flex: 0 1 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.connection-hub .profile-card .profile-side .profile-photo {
+    flex: 0 1 70%;
+    
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.connection-hub .profile-card .profile-side .profile-photo img {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+}
+
+.connection-hub .profile-card .profile-side .profile-like {
+    flex: 0 1 30%;
+
+    width: 100%;
+    text-align: center;
+}
+
+.connection-hub .profile-card .profile-info {
+    flex: 0 1 80%;
+}
+
+.connection-hub .profile-card .profile-info .view-profile {
+    float: right;
+    font-weight: 500;
+    color: #FB818A;
+    margin-top: 5px;
+}
+
+.connection-hub .profile-card .profile-info .view-profile .arrow {
+    border: solid #F46161;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.connection-hub .profile-card .profile-info .profile-name {
+    margin-bottom: 5px;
+}
+
+.connection-hub .profile-card .profile-info .profile-carehome {
+    font-size: 1.2rem;
+    color: #626262;	
+    font-weight: 400;	
+    line-height: 19px;  
+    padding-bottom: 5px;
+}
+
+.connection-hub .profile-card .profile-info .profile-distance {
+    color: #000000;	
+    font-size: 1.0rem;	
+    font-weight: 300;	
+    line-height: 17px;
+    padding-bottom: 15px;
+}
+
+.connection-hub .profile-card .profile-info .profile-interests-label {
+    margin-bottom: 0;
+    color: #626262;	
+    font-size: 1.0rem;
+    font-weight: 500;
+    line-height: 19px;    
+}
+
+.connection-hub .profile-card .profile-info .profile-interests {
+    z-index: 1;
+}
+
+.profile-list-pagination {
+    padding-top: 5px;
+}
+
+.profile-list-pagination li.page-item {
+    border: none;
+    padding: 4px;
+
+    overflow: hidden;
+}
+
+.profile-list-pagination li.page-item a.page-link {
+    background-color: #DCDCDC;
+    width: 12px;
+    height: 12px;
+    
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+
+    text-indent: -1000px;
+}
+
+.profile-list-pagination li.page-item.disabled a.page-link {
+    background-color: #FB818A;
+}
+
+.connection-hub.profile-summary.pink-ripple {
+    background: url('/images/icons/pink-ripple.svg') no-repeat;
+    background-position: top 0 right 0;
+}
+
+.connection-hub.profile-summary .summary-title {
+    padding: 15px 30px;
+}
+
+.connection-hub.profile-summary .summary-title h3{
+    font-size: 1.3rem;
+}
+
+.connection-hub.profile-summary .profile-information {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.connection-hub.profile-summary .profile-information {
+    padding: 0px 10px 30px 30px;
+}
+
+.connection-hub.profile-summary .profile-information .card-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.connection-hub.profile-summary .profile-information .card-info h3 {
+    font-size: 1.3rem;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .photo {
+    flex: 0 1 40%;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .photo img {
+    width: 85%;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .info {
+    flex: 0 1 60%;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .info .care-home {
+    font-weight: 500;
+    line-height: 17px;
+    padding-bottom: 5px;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .info .address {
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .info .view-profile {
+    font-weight: 500;
+    color: #FB818A;
+    padding-right: 15px;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .info .view-profile a {
+    float: right;
+    font-weight: 500;
+    color: #FB818A;
+}
+
+.connection-hub.profile-summary .profile-information .card-info .info .view-profile .arrow {
+    border: solid #F46161;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+.connection-hub.profile-summary .map {
+    padding-bottom: 30px;
+}
+
+.connection-hub.profile-summary .map img{
+    width: 100%;
+}
+
+
+.connection-hub.profile-summary .block-info  {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 10px 30px 30px;
+}
+
+.connection-hub.profile-summary .block-info .icon {
+    flex: 0 1 15%;
+}
+
+.connection-hub.profile-summary .block-info .icon img {
+    width: 30px;
+}
+
+.connection-hub.profile-summary .block-info .info {
+    flex: 0 1 85%;
+}
+
+.connection-hub.profile-summary .block-info .info h4 {
+    color: #626262;
+    margin: 0;
+}
+
+.connection-hub.profile-summary .block-info .info .content {
+    font-size: 1.1rem;
+}
+
+.connection-hub.booking {
+    padding: 0px 10px 30px 30px;
+}
+
+.connection-hub.booking .intro h2 {
+    font-size: 1.6rem;
+}
+
+.connection-hub.booking .confirmation-actions {
+    padding: 20px 0px 0px 0px;
+}
+
+.connection-hub.booking .time-slots-list {
 
 }
 
-.connection-hub .card .card-body {
+.connection-hub.booking .time-slots-list.view {
+    padding-top: 15px;
+}
 
+.connection-hub.booking .time-slots-list .time-slot{
+    border-bottom: 1px solid #FFCF62;
+    padding: 0px 15px 15px 40px;
+    margin-bottom: 15px;
+}
+
+.connection-hub.booking .time-slots-list.view .time-slot{
+    padding: 0px 15px 15px 15px;
+    margin-bottom: 15px;
+}
+
+.connection-hub.booking .time-slots-list .time-slot.last{
+    border-bottom: none;
+}
+
+.connection-hub.booking .custom-checkbox .custom-control-input:checked .custom-control-label::before {
+    background-color: #FFCF62 !important;
+}
+
+.connection-hub.booking .time-slots-list .time-slot a {
+    float: right;
+    font-weight: 500;
+    color: #FB818A;
+}
+
+.connection-hub.booking .time-slots-list .time-slot .arrow {
+    border: solid #F46161;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+
+.connection-hub.booking .time-slots-list .time-slot span{
+     display: block;
+}
+
+.connection-hub.booking .time-slots-list .time-slot span.dow{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.connection-hub.booking .time-slots-list .time-slot span.date{
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+
+.connection-hub.booking .confirmation-actions .btn-primary {
+    background-color: transparent !important;
+    border: 2px solid #FB818A;
+    color: #FB818A;
+    border-radius: 50px;
+
+    width: 100%;
 }

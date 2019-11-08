@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>language</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="language" transform="translate(1.000000, 1.000000)">
+            <g>
+                <g id="Nutritionist-Copy" fill="#FFCF62" stroke="#FFCF62">
+                    <circle id="Oval" cx="9" cy="9" r="9"></circle>
+                </g>
+                <g id="Group-2" transform="translate(3.000000, 4.500000)">
+                    <g id="Group" fill="#FFFFFF">
+                        <path d="M4,8 C1.790861,8 2.705415e-16,6.209139 0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L8,0 C10.209139,-4.05812251e-16 12,1.790861 12,4 C12,4.43901691 11.9292741,4.8615149 11.7985948,5.25672157 C11.2651612,7.77304174 10.0039377,9.35375643 8.01490962,10 C8.49600692,8.94899301 8.28800718,8.28581106 7.00944071,8 L4,8 Z" id="Combined-Shape"></path>
+                    </g>
+                    <g id="Group-3" transform="translate(2.000000, 3.000000)" fill="#FFCF62">
+                        <circle id="Oval" cx="1" cy="1" r="1"></circle>
+                        <circle id="Oval-Copy" cx="4" cy="1" r="1"></circle>
+                        <circle id="Oval-Copy-2" cx="7" cy="1" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

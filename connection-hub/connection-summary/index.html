@@ -36,10 +36,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="/connection-hub">Connection Hub</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/profile">Profile</a>
                 </li>            
             </ul>
@@ -55,7 +55,7 @@
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
-                  <h1>Edit profile</h1>      
+                  <h1>Success!</h1>      
               </div>
             </div>
           </div>
@@ -63,34 +63,68 @@
       <!-- /PAGE INTRO-->
 
       <!-- PAGE TABS-->
-        <section class="profile edit py-3">
+        <section class="connection-hub profile-summary pink-ripple py-3">
           <div class="container">
 
-            <div class="row" style="display: none;">
+            <div class="row">
               <div class="col-sm-12">
-                <div class="form-section">
-                    <h2>About you</h2> 
-
-                    <div class="form-input-group">
-                      <label>Name</label>
-                      <input type="text" name="name" placeholder="Eileen Gallagner" />
-                    </div>
+                <div class="summary-title">
+                    <h2> 
+                    You have booked 2 <br />meet-ups with:</h2>                  
                 </div>
               </div>
             </div>
-      
+
             <div class="row">
-              <div class="map" style="padding-bottom: 20px;">
-                  <img src="/images/volunteer-form.png" style="width: 100%;max-width: 571px;" />
-              </div>              
-            </div>            
+                <div class="col-sm-12">
+                    <div class="profile-information">
+                        <div class="card-info">
+                            <div class="photo">
+                              <img src="/images/profiles//myrtle.png" />
+                            </div>
+                            <div class="info">
+                              <h3>Myrtle</h3>
+                              <div class="care-home">German Canadian <br/> Care Home</div>
+                              <div class="address">
+                                2010 Harrison Dr. Vancouver <br />
+                                BC, V5P 2P6
+                              </div>
+                              <div class="view-profile">
+                                <a href="#">View profile <span class="arrow"></span></a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-sm-12">
                     <div class="connection-hub booking">
-                      <div class="confirmation-actions">
-                          <button onclick="javascript:window.location.href='/connection-hub'" type="button" class="btn btn-primary btn-lg btn-block">Continue</button>
+
+                      <div class="time-slots-list view">
+                          <div class="time-slot">
+                              <div class="info">
+                                  <a href="#">Edit / Cancel<span class="arrow"></span></a>
+                                <span class="dow">Thursday</span>
+                                <span class="date">11/07/2019</span>
+                                <span class="time">5:30 PM</span>
+                              </div>
+                          </div>                        
+                          <div class="time-slot">
+                              <div class="info">
+                                  <a href="#">Edit / Cancel <span class="arrow"></span></a>
+                                <span class="dow">Saturday</span>
+                                <span class="date">11/09/2019</span>
+                                <span class="time">5:30 PM</span>
+                              </div>
+                          </div>                        
                       </div>
+
+                      <div class="confirmation-actions">
+                          <button type="button" class="btn btn-primary btn-lg btn-block">Add to calendar</button>
+                      </div>
+
                     </div>
                 </div>
             </div>

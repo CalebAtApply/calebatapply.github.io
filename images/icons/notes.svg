@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>notes</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="notes" transform="translate(1.000000, 1.000000)">
+            <g>
+                <g id="Nutritionist-Copy" fill="#FFAC4A" stroke="#FFAC4A">
+                    <circle id="Oval" cx="9" cy="9" r="9"></circle>
+                </g>
+                <line x1="5" y1="6" x2="13" y2="6" id="Line-2" stroke="#FFFFFF" stroke-linecap="round"></line>
+                <line x1="5" y1="9" x2="13" y2="9" id="Line-2-Copy" stroke="#FFFFFF" stroke-linecap="round"></line>
+                <line x1="5" y1="12" x2="13" y2="12" id="Line-2-Copy-2" stroke="#FFFFFF" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>
